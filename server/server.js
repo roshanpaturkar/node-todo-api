@@ -43,7 +43,7 @@ app.get('/todos/:id', (request, response) => {
 
   Todo.findById(id).then((todo) => {
     if (!todo) {
-      response.status(404).send()
+      return response.status(404).send()
     }
     response.send({todo})
   }).catch((error) => {
