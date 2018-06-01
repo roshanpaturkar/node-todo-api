@@ -33,6 +33,8 @@ const testTodos = [{
 },{
   _id: new ObjectID(),
   text: "Second test todo",
+  completed: true,
+  completedAt: 333,
   _creator: userTwoID
 }, {
   _id: new ObjectID(),
